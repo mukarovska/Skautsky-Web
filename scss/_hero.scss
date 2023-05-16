@@ -1,0 +1,13 @@
+@use "basicStyles";
+
+.hero{
+  text-align: center;
+  background-color: basicStyles.$primaryC;
+  padding: 40px;
+
+  &__foto{
+    width: 100%;
+    max-width: 800px;
+  }
+
+}

@@ -1,0 +1,21 @@
+@use "basicStyles";
+
+.button{
+  max-width: fit-content;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  background-color: basicStyles.$secondaryC;
+  border-radius: 10px;
+  border: 2px solid basicStyles.$secondaryC;
+  transition: 0.2s;
+
+  &:hover{
+    color: basicStyles.$secondaryC;
+    background-color: basicStyles.$primaryC;
+    border: 2px solid basicStyles.$secondaryC;
+  }
+
+}
+

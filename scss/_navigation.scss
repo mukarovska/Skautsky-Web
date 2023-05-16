@@ -14,7 +14,7 @@
     
 
     &__logo{
-        width: 130px;
+        width: 180px;
     }
 }
 
@@ -95,14 +95,14 @@
         }
 
         &__link{
-            border: 2px solid white;
-            border-radius: 10px;
-            padding: 10px 20px;
+            border-bottom: 2px solid white;
+            //border-radius: 10px;
+            padding: 5px 10px;
             transition: 0.2s;
         }
 
         &__link:hover{
-            border: 2px solid basicStyles.$secondaryC;
+            border-bottom: 2px solid basicStyles.$secondaryC;
         }
     }
 }

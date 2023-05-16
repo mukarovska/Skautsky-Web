@@ -9,12 +9,16 @@ $secondaryFont: themix, sans-serif;
 
 $primaryC: #294885;
 $secondaryC: #FFCC00;
-$additionalC: #cdd3d6;
+$additionalC: #fffae9;
+
+*{
+    text-decoration: none;
+}
 
 body {
     margin: 0;
     padding: 0;
-    padding-top: 70px;
+    padding-top: 63px;
     font-family: $secondaryFont;
     font-size: 15px;
 }
@@ -23,4 +27,12 @@ h1{
     margin: 0 0 40px 0;
     font-family: $primaryFont;
     font-size: 30px;
+}
+
+section{
+    padding: 40px 60px;
+}
+
+p{
+    margin: 0;
 }

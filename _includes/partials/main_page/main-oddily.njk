@@ -1,0 +1,22 @@
+<section class="section-oddily">
+
+  <h1 class="section-oddily__heading">Oddíly</h1>
+  <p class="section-oddily__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis enim sapiente maiores quas facilis corporis quis debitis, doloremque earum delectus.</p>
+
+  <div class="flex">
+    {% for card in collections.oddily %}
+
+      
+        <div class="card">
+          <a class="card__link" href="{{ card.url }}">
+            <img class="card__img" src="/images/{{ card.data.foto }}" alt="{{ card.data.alt }}">
+
+            <h3 class="card__heading">{{ card.data.title }}</h3>
+            <p class="card__text">{{ card.data.vek }}</p>
+          </a>
+        </div>
+      
+
+    {% endfor %}
+  </div>
+</section>
