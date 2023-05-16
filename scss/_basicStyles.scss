@@ -1,12 +1,26 @@
 @use "fontDeclaration";
 
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
 $primaryFont: skautbold, sans-serif;
 $secondaryFont: themix, sans-serif;
 
-$primaryC: #ea614a;
-$secondaryC: #bdd4df;
+$primaryC: #294885;
+$secondaryC: #FFCC00;
 $additionalC: #cdd3d6;
 
-body{
+body {
     margin: 0;
+    padding: 0;
+    padding-top: 70px;
+    font-family: $secondaryFont;
+    font-size: 15px;
+}
+
+h1{
+    margin: 0 0 40px 0;
+    font-family: $primaryFont;
+    font-size: 30px;
 }

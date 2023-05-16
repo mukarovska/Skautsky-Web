@@ -1,13 +1,20 @@
 @use "basicStyles";
 
 .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    max-height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 30px 3px 30px;
+    
 
     &__logo{
-        width: 200px;
+        width: 130px;
     }
 }
 
@@ -18,15 +25,21 @@
         left: -9999px;
     }
 
-    &__toggler{
-        font-size: 50px;
+    &__bar{
+        display: block;
+        margin-bottom: 7px;
+        border-radius: 2px;
+        width: 25px;
+        height: 2px;
+        background-color: basicStyles.$primaryC;
+        border: 1px solid basicStyles.$primaryC;
     }
 
     &__list{
         margin: 0;
         padding: 0;
         list-style: none;
-        background-color: basicStyles.$primaryC;
+        background-color: white;
         display: none;
     }
 
@@ -35,18 +48,61 @@
     }
 
     &__item{
-        border-bottom: 1px solid green;
+        border-bottom: 2px solid basicStyles.$primaryC;
+        transition: 0.2s;
+    }
+
+    &__item:hover{
+        border-bottom: 2px solid basicStyles.$secondaryC;
     }
 
     &__link{
         display: block;
-        padding: 15px;
+        color: black;
+        padding: 10px 30px;
+        font-family: basicStyles.$secondaryFont;
+        cursor: pointer;
         text-decoration: none;
-        color: basicStyles.$secondaryC;
     }
 
-    &__checkbox:checked ~ .navigation__list{
+    @media  screen and (max-width: 799px) {
+        &__checkbox:checked ~ .navigation__list{
         display: block;
         position: absolute;
+        left: 0px;
+        top: 60px;
+        width: 100%;
+        }
+    }
+    
+
+    @media screen and (min-width: 800px) {
+        &__toggler{
+            display: none;
+        }
+
+        &__list{
+            display: flex;
+        }
+
+        &__item{
+            border-bottom: 0;
+            padding: 0 10px;
+        }
+
+        &__item:hover{
+            border-bottom: 0;
+        }
+
+        &__link{
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 10px 20px;
+            transition: 0.2s;
+        }
+
+        &__link:hover{
+            border: 2px solid basicStyles.$secondaryC;
+        }
     }
 }

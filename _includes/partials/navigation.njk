@@ -1,15 +1,19 @@
 <header class="header">
-    <img class="header__logo" src="/images/logoBarevne2.png" alt="Logo">
+    <a href="#"><img class="header__logo" src="/images/logoBarevne2.png" alt="Logo"></a>
 
     <nav class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navigation-checkbox">
-        <label for="navigation-checkbox" class="navigation__toggler">&#9776;</label>
+        <label for="navigation-checkbox" class="navigation__toggler">
+            <span class="navigation__bar"></span>
+            <span class="navigation__bar"></span>
+            <span class="navigation__bar"></span>
+        </label>
 
         <ul class="navigation__list">
-            <li class="navigation__item">O středisku</li>
-            <li class="navigation__item">Oddíly</li>
-            <li class="navigation__item">Základny</li>
-            <li class="navigation__item">Kontakty</li>
+            <li class="navigation__item"><a class="navigation__link" href="#">O středisku</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Oddíly</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Základny</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Kontakty</a></li>
         </ul>
 
     </nav>

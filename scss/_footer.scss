@@ -1,0 +1,55 @@
+@use "basicStyles";
+
+.footer{
+    text-align: center;
+    color: white;
+    background-color: basicStyles.$primaryC;
+    padding: 40px;
+
+    &__buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    &__button{
+        flex-grow: 0;
+        max-width: fit-content;
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+        background-color: basicStyles.$secondaryC;
+        border-radius: 10px;
+        border: 2px solid basicStyles.$secondaryC;
+        transition: 0.2s;
+    }
+
+    &__button:hover{
+        color: basicStyles.$secondaryC;
+        background-color: basicStyles.$primaryC;
+        border: 2px solid basicStyles.$secondaryC;
+    }
+
+    &__icone-img{
+        width: 50px;
+    }
+
+    &__buttons{
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 450px) {
+        &__buttons{
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+        }
+    }
+
+    
+
+    
+}
+
