@@ -1,4 +1,5 @@
 @use "basicStyles";
+@use "buttons";
 
 .card{
   flex-basis: 230px;
@@ -11,6 +12,7 @@
     border-radius: 50%;
     box-shadow: 3px 3px 10px hsla(0, 0%, 31%, 0.281);
     border: 3px solid basicStyles.$primaryC;
+    transition: 0.2s;
   }
 
   
@@ -29,6 +31,7 @@
     height: 2px;
     background-color: black;
     display: block;
+    transition: border 0.2s, background-color 0.2s;
   }
 
   &__text{
@@ -37,9 +40,12 @@
 
 }
 
-.card:hover .card__img{
+.card--hover:hover .card__img{
   border: 3px solid basicStyles.$secondaryC;
 }
-.card:hover .card__heading::after{
+.card--hover:hover .card__heading::after{
   background-color: basicStyles.$secondaryC;
+}
+.card--hover:hover .button--inverted{
+  background-color: basicStyles.$additionalC;
 }

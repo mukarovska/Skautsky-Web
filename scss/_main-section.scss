@@ -2,15 +2,21 @@
 @use "flexbox";
 @use "card";
 
-.section-oddily{
+.section{
   text-align: center;
   background-color: basicStyles.$additionalC;
+  color: basicStyles.$primaryC;
 
   &__text{
     margin-bottom: 40px;
   }
 }
 
+.section--inverted{
+  color: basicStyles.$primaryC;
+  text-align: center;
+  background-color: white;
+}
 
 
   

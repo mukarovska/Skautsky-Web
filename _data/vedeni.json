@@ -1,0 +1,47 @@
+[
+  {
+    "duties": "Vedoucí oddílu",
+    "oddil": "vlčat",
+    "name": "Jan Jelínek",
+    "number": "739 884 512",
+    "email": "jelinekjan@skaut7.cz",
+    "foto": "jan.jpg",
+    "alt": "Fotografie Honzy"
+  },
+  {
+    "duties": "Vedoucí oddílu",
+    "oddil": "světlušek",
+    "name": "Jana Takáčová",
+    "number": "603 365 412",
+    "email": "takacovaj@skaut7.cz",
+    "foto": "jana.jpg",
+    "alt": "Fotografie Jany"
+  },
+  {
+    "duties": "Vedoucí oddílu",
+    "oddil": "skautů",
+    "name": "Vojtěch Vodička „Pakůň”",
+    "number": "777 785 854",
+    "email": "vodickav@skaut7.cz",
+    "foto": "vojtech.jpg",
+    "alt": "Fotografie Vojty"
+  },
+  {
+    "duties": "Vedoucí oddílu",
+    "oddil": "skautek",
+    "name": "Lucie Kollingerová",
+    "number": "603 843 047",
+    "email": "kollingeroval@skaut7.cz",
+    "foto": "lucie.jpg",
+    "alt": "Fotografie Lucky"
+  },
+  {
+    "duties": "Vedoucí",
+    "oddil": "roverského kmene",
+    "name": "Petr Wimr „Mazel”",
+    "number": "603 002 723",
+    "email": "wimrp@skaut7.cz",
+    "foto": "petr.jpg",
+    "alt": "Fotografie Petra"
+  }
+]

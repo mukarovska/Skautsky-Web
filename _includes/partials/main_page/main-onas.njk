@@ -1,0 +1,37 @@
+<section class="section--inverted" id="kontakty">
+
+    <h1 class="section__heading">O středisku</h1>
+    <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis enim sapiente maiores quas facilis corporis quis debitis, doloremque earum delectus.</p>
+  
+    <div class="flex">
+      {% for osoba in stredisko %}
+  
+          <div class="card">
+              <img class="card__img" src="/images/{{ osoba.foto }}" alt="{{ osoba.alt }}">
+  
+              <h3 class="card__heading">{{ osoba.duties }}<br>{{ osoba.oddil }}</h3>
+              <p class="card__text">{{ osoba.name }}</p>
+              <p class="card__text">{{ osoba.number }}</p>
+              <p class="card__text">{{ osoba.email }}</p>
+          </div>
+        
+      {% endfor %}
+    </div>
+
+    <div class="flex--double">
+      {% for osoba in vedeni %}
+  
+          <div class="card">
+              <img class="card__img" src="/images/{{ osoba.foto }}" alt="{{ osoba.alt }}">
+  
+              <h3 class="card__heading">{{ osoba.duties }}<br>{{ osoba.oddil }}</h3>
+              <p class="card__text">{{ osoba.name }}</p>
+              <p class="card__text">{{ osoba.number }}</p>
+              <p class="card__text">{{ osoba.email }}</p>
+          </div>
+        
+      {% endfor %}
+    </div>
+
+    
+  </section>

@@ -166,17 +166,22 @@ p {
   max-width: fit-content;
   display: inline-block;
   text-decoration: none;
-  color: black;
+  color: #294885;
   padding: 10px 20px;
   background-color: #FFCC00;
   border-radius: 10px;
   border: 2px solid #FFCC00;
-  transition: 0.2s;
+  transition: color 0.2s, border 0.2s, background-color 0.2s;
 }
 .button:hover {
   color: #FFCC00;
   background-color: #294885;
   border: 2px solid #FFCC00;
+}
+
+.button--inverted {
+  background-color: #FFCC00;
+  margin-top: 10px;
 }
 
 .footer {
@@ -194,6 +199,9 @@ p {
 }
 .footer__icone-img {
   width: 50px;
+}
+.footer__text--margin {
+  margin: 20px 0 20px 0;
 }
 @media screen and (min-width: 450px) {
   .footer__buttons {
@@ -228,6 +236,14 @@ p {
   flex-wrap: wrap;
 }
 
+.flex--double {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
 .card {
   flex-basis: 230px;
   flex-shrink: 0;
@@ -239,6 +255,7 @@ p {
   border-radius: 50%;
   box-shadow: 3px 3px 10px hsla(0, 0%, 31%, 0.281);
   border: 3px solid #294885;
+  transition: 0.2s;
 }
 .card__heading {
   color: #294885;
@@ -253,23 +270,35 @@ p {
   height: 2px;
   background-color: black;
   display: block;
+  transition: border 0.2s, background-color 0.2s;
 }
 .card__text {
   color: #294885;
 }
 
-.card:hover .card__img {
+.card--hover:hover .card__img {
   border: 3px solid #FFCC00;
 }
 
-.card:hover .card__heading::after {
+.card--hover:hover .card__heading::after {
   background-color: #FFCC00;
 }
 
-.section-oddily {
-  text-align: center;
+.card--hover:hover .button--inverted {
   background-color: #fffae9;
 }
-.section-oddily__text {
+
+.section {
+  text-align: center;
+  background-color: #fffae9;
+  color: #294885;
+}
+.section__text {
   margin-bottom: 40px;
+}
+
+.section--inverted {
+  color: #294885;
+  text-align: center;
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */

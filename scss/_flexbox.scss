@@ -4,3 +4,11 @@
   gap: 40px;
   flex-wrap: wrap;
 }
+
+.flex--double{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}

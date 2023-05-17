@@ -1,18 +1,19 @@
-<section class="section-oddily">
+<section class="section" id="oddily">
 
-  <h1 class="section-oddily__heading">Oddíly</h1>
-  <p class="section-oddily__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis enim sapiente maiores quas facilis corporis quis debitis, doloremque earum delectus.</p>
+  <h1 class="section__heading">Oddíly</h1>
+  <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis enim sapiente maiores quas facilis corporis quis debitis, doloremque earum delectus.</p>
 
   <div class="flex">
-    {% for card in collections.oddily %}
+    {% for card in collections.oddily | reverse %}
 
       
-        <div class="card">
+        <div class="card card--hover">
           <a class="card__link" href="{{ card.url }}">
-            <img class="card__img" src="/images/{{ card.data.foto }}" alt="{{ card.data.alt }}">
+            <img class="card__img" src="/images/{{ card.data.view }}" alt="{{ card.data.alt-view }}">
 
             <h3 class="card__heading">{{ card.data.title }}</h3>
             <p class="card__text">{{ card.data.vek }}</p>
+            <p class="button button--inverted">Zjistit více</p>
           </a>
         </div>
       

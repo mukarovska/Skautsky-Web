@@ -1,0 +1,23 @@
+<section class="section" id="zakladny">
+
+    <h1 class="section__heading">Základny</h1>
+    <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis enim sapiente maiores quas facilis corporis quis debitis, doloremque earum delectus.</p>
+  
+    <div class="flex">
+      {% for card in collections.zakladny %}
+  
+        
+          <div class="card card--hover">
+            <a class="card__link" href="{{ card.url }}">
+              <img class="card__img" src="/images/{{ card.data.view }}" alt="{{ card.data.alt-view }}">
+  
+              <h3 class="card__heading">{{ card.data.title }}</h3>
+              <p class="card__text">{{ card.data.text }}</p>
+              <p class="button button--inverted">Zjistit více</p>
+            </a>
+          </div>
+        
+  
+      {% endfor %}
+    </div>
+  </section>

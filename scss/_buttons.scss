@@ -4,12 +4,12 @@
   max-width: fit-content;
   display: inline-block;
   text-decoration: none;
-  color: black;
+  color: basicStyles.$primaryC;
   padding: 10px 20px;
   background-color: basicStyles.$secondaryC;
   border-radius: 10px;
   border: 2px solid basicStyles.$secondaryC;
-  transition: 0.2s;
+  transition: color 0.2s, border 0.2s, background-color 0.2s;
 
   &:hover{
     color: basicStyles.$secondaryC;
@@ -18,4 +18,11 @@
   }
 
 }
+
+.button--inverted{
+  background-color: basicStyles.$secondaryC;
+  margin-top: 10px;
+}
+
+
 
