@@ -10,13 +10,25 @@
   &__text{
     margin-bottom: 40px;
   }
+
+  &__foto--secondary{
+    width: 200px;
+  }
+
+  &__text--secondary{
+    text-align: left;
+  }
 }
+
+
 
 .section--inverted{
   color: basicStyles.$primaryC;
   text-align: center;
   background-color: white;
 }
+
+
 
 
   
