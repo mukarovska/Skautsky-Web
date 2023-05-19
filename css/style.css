@@ -122,7 +122,7 @@ p {
 }
 .navigation__link {
   display: block;
-  color: black;
+  color: #294885;
   padding: 10px 30px;
   font-family: themix, sans-serif;
   cursor: pointer;
